@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"mobx",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "mobx",
+    "description": "api documentation for [mobx (v3.1.8)](https://mobxjs.github.io/mobx) [![npm package](https://img.shields.io/npm/v/npmdoc-mobx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mobx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mobx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mobx)",
     "devDependencies": {
-        "mobx": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "mobx": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-mobx",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-mobx",
+    "keywords": [
+        "documentation",
+        "mobx"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_mobx.js",
+    "name": "npmdoc-mobx",
+    "nameAlias": "npmdoc_mobx",
+    "nameOriginal": "npmdoc-mobx",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-mobx.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
