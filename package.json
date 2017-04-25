@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "mobx",
-    "description": "#### api documentation for  [mobx (v3.1.9)](https://mobxjs.github.io/mobx)  [![npm package](https://img.shields.io/npm/v/npmdoc-mobx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mobx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mobx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mobx)",
+    "description": "#### basic api documentation for  [mobx (v3.1.9)](https://mobxjs.github.io/mobx)  [![npm package](https://img.shields.io/npm/v/npmdoc-mobx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mobx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mobx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mobx)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "mobx": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.2"
+    "version": "2017.4.25"
 }

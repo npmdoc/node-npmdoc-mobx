@@ -1,6 +1,6 @@
 # npmdoc-mobx
 
-#### api documentation for  [mobx (v3.1.9)](https://mobxjs.github.io/mobx)  [![npm package](https://img.shields.io/npm/v/npmdoc-mobx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mobx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mobx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mobx)
+#### basic api documentation for  [mobx (v3.1.9)](https://mobxjs.github.io/mobx)  [![npm package](https://img.shields.io/npm/v/npmdoc-mobx.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mobx) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mobx.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mobx)
 
 #### Simple, scalable state management.
 
@@ -113,7 +113,8 @@
     },
     "typings": "lib/mobx.d.ts",
     "umd:main": "lib/mobx.umd.js",
-    "version": "3.1.9"
+    "version": "3.1.9",
+    "bin": {}
 }
 ```
 
